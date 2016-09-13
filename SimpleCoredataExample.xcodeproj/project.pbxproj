@@ -13,6 +13,8 @@
 		1BD301B61D886E1C00A1214F /* SimpleCoredataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BD301B41D886E1C00A1214F /* SimpleCoredataExample.xcdatamodeld */; };
 		1BD301B81D886E1C00A1214F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD301B71D886E1C00A1214F /* Assets.xcassets */; };
 		1BD301BB1D886E1C00A1214F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD301B91D886E1C00A1214F /* LaunchScreen.storyboard */; };
+		1BD301D11D88736B00A1214F /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD301CF1D88736B00A1214F /* Person+CoreDataClass.swift */; };
+		1BD301D21D88736B00A1214F /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD301D01D88736B00A1214F /* Person+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1BD301B71D886E1C00A1214F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD301BA1D886E1C00A1214F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD301BC1D886E1C00A1214F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BD301CF1D88736B00A1214F /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataClass.swift"; path = "../Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1BD301D01D88736B00A1214F /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Person+CoreDataProperties.swift"; path = "../Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		1BD301AC1D886E1C00A1214F /* SimpleCoredataExample */ = {
 			isa = PBXGroup;
 			children = (
+				1BD301C61D886E5100A1214F /* CoreData */,
 				1BD301AD1D886E1C00A1214F /* AppDelegate.swift */,
 				1BD301AF1D886E1C00A1214F /* ViewController.swift */,
 				1BD301B11D886E1C00A1214F /* Main.storyboard */,
 				1BD301B71D886E1C00A1214F /* Assets.xcassets */,
 				1BD301B91D886E1C00A1214F /* LaunchScreen.storyboard */,
 				1BD301BC1D886E1C00A1214F /* Info.plist */,
-				1BD301B41D886E1C00A1214F /* SimpleCoredataExample.xcdatamodeld */,
 			);
 			path = SimpleCoredataExample;
+			sourceTree = "<group>";
+		};
+		1BD301C61D886E5100A1214F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1BD301C81D886E5E00A1214F /* Schema */,
+				1BD301C71D886E5800A1214F /* Classes */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1BD301C71D886E5800A1214F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1BD301CF1D88736B00A1214F /* Person+CoreDataClass.swift */,
+				1BD301D01D88736B00A1214F /* Person+CoreDataProperties.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1BD301C81D886E5E00A1214F /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				1BD301B41D886E1C00A1214F /* SimpleCoredataExample.xcdatamodeld */,
+			);
+			name = Schema;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD301D11D88736B00A1214F /* Person+CoreDataClass.swift in Sources */,
+				1BD301D21D88736B00A1214F /* Person+CoreDataProperties.swift in Sources */,
 				1BD301B61D886E1C00A1214F /* SimpleCoredataExample.xcdatamodeld in Sources */,
 				1BD301B01D886E1C00A1214F /* ViewController.swift in Sources */,
 				1BD301AE1D886E1C00A1214F /* AppDelegate.swift in Sources */,
@@ -267,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NXBHE32CVP;
 				INFOPLIST_FILE = SimpleCoredataExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.apps.SimpleCoredataExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,6 +313,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NXBHE32CVP;
 				INFOPLIST_FILE = SimpleCoredataExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = silverio.flavio.apps.SimpleCoredataExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +340,7 @@
 				1BD301C11D886E1C00A1214F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
